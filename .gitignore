@@ -3,13 +3,23 @@
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
 .utmp/
-/ProyectoInicialEBAC/[Ll]ibrary/
-/ProyectoInicialEBAC/[Tt]emp/
-/ProyectoInicialEBAC/[Oo]bj/
-/ProyectoInicialEBAC/[Bb]uild/
-/ProyectoInicialEBAC/[Bb]uilds/
-/ProyectoInicialEBAC/[Ll]ogs/
-/ProyectoInicialEBAC/[Uu]ser[Ss]ettings/
+# Unity folders (ignored always)
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# Visual Studio
+.vs/
+*.csproj
+*.sln
+
+# Build folders
+[Bb]uild/
+[Bb]uilds/
+
+# Logs
 *.log
 
 # MemoryCaptures can get excessive in size.
