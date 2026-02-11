@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class CuboAwake : MonoBehaviour 
 {
+    public GameObject prefabACrear;
     void Awake()
     {
-        GameObject cubo = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        cubo.transform.position = new Vector3(20, 1, 0);
+        GameObject cubo = Instantiate(prefabACrear);
+        cubo.transform.position = transform.position;
         cubo.name = "Cubo_Awake";
     }    
 }

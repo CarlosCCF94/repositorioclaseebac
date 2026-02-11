@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class CuboEnableDisable : MonoBehaviour 
 {
+    public GameObject prefabACrear;
     void OnEnable()
     {
-        GameObject cubo = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        cubo.transform.position = new Vector3(40, 2, 0);
+        GameObject cubo = Instantiate(prefabACrear);
+        cubo.transform.position = transform.position;
         cubo.name = "Cubo_OnEnable";
     }
     void OnDisable()
     {
-        GameObject cubo = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        cubo.transform.position = new Vector3(40, 1, 0);
+        GameObject cubo = Instantiate(prefabACrear);
+        cubo.transform.position = transform.position;
         cubo.name = "Cubo_OnDisable";
     }
 }

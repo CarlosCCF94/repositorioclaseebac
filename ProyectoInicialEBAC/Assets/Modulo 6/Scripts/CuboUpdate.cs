@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class CuboUpdate : MonoBehaviour
 {
+    public GameObject prefabACrear;
 
     // Update is called once per frame
 
     void Update()
     {
-        GameObject cubo = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        cubo.transform.position = new Vector3(30, 1, 0);
+        GameObject cubo = Instantiate(prefabACrear);
+        cubo.transform.position = transform.position;
         cubo.name = "Cubo_Update";
     }
 }
